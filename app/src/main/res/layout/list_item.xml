@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/half_margin"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="0.5"
+        android:adjustViewBounds="true"
+        android:src="@drawable/open_book"
+        android:layout_gravity="center_vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/half_margin"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <TextView
+            android:id="@+id/list_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/book_name_text_size"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_quantity"
+                android:textColor="@color/editorColorPrimaryDark"
+                android:textSize="@dimen/list_other_text_size"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:id="@+id/list_book_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/editorColorPrimaryDark"
+                android:textSize="@dimen/list_other_text_size"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_price"
+                android:textStyle="bold"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:id="@+id/list_book_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_book_price"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/list_sale_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:text="@string/sale_button"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
